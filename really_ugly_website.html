@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>THE UGLIEST WEBSITE EVER</title>
+  <style>
+    /* Global chaos */
+    html,body{height:100%;margin:0;padding:0;font-family: 'Times New Roman', Times, serif;background: repeating-linear-gradient(45deg,#ff00ff33 0 10px,#00ffff33 10px 20px);}
+    .container{width:95%;margin:12px auto;padding:12px;border:8px dotted lime;background: linear-gradient(180deg,#fff8 0%, #ffe 50%, #fff0 100%);box-shadow: 12px 12px 0 rgba(0,0,0,0.4);} 
+
+    /* Headings that scream */
+    h1{font-size:56px;color:#ff0066;text-shadow:2px 2px 0 #ffff00, -2px -2px 0 #00ffff;border-bottom:6px dashed #000;padding:8px;margin:4px 0;background:linear-gradient(90deg,#fff,#ff9);transform:rotate(-1deg)}
+    h2{font-size:30px;color:#0066ff;background:#f0f;padding:6px;border-radius:16px;display:inline-block}
+
+    /* Ugly navigation */
+    #nav{background:linear-gradient(90deg, #ff0, #f00);padding:8px;margin:8px 0;border:4px groove purple}
+    #nav ul{list-style:circle inside; margin:0;padding:6px}
+    #nav li{display:inline-block;margin-right:20px;padding:6px;border-right:2px solid #000}
+
+    /* Table madness */
+    table.big{width:100%;border-collapse:collapse;margin:12px 0}
+    table.big th, table.big td{border:4px solid black;padding:12px;text-align:center}
+    table.big th{background:linear-gradient(180deg,#0f0,#0f8);font-weight:bold;font-size:18px}
+    table.big tr:nth-child(even){background:#fffae6}
+    table.big tr:nth-child(odd){background:#e6fffa}
+
+    /* Sidebar with terrible alignment */
+    .sidebar{float:right;width:260px;padding:12px;border:6px double orange;margin-left:12px;background:repeating-linear-gradient(0deg,#ffffff55 0 6px,#00000011 6px 12px)}
+
+    /* Lists that don't agree */
+    .weird-list{padding:10px;border:3px ridge #333;background:#fff0}
+    .weird-list li{margin:6px 0;padding:6px;background:#ffff99;border-left:8px solid red}
+
+    /* Buttons that hurt */
+    .btn{display:inline-block;padding:12px 18px;margin:6px;border:6px outset #333;background:linear-gradient(90deg,#ff8080,#80ff80);font-weight:bold}
+
+    /* Ugly footer */
+    footer{clear:both;margin-top:24px;padding:12px;border-top:10px solid #000;background:linear-gradient(90deg,#222,#555);color:#fff}
+
+    /* Flashy marquee-like area */
+    .marquee{width:100%;overflow:hidden;border:4px solid #0ff;margin:12px 0;padding:8px}
+    .marquee p{white-space:nowrap;display:inline-block;animation:slide 12s linear infinite;font-size:20px}
+    @keyframes slide{0%{transform:translateX(100%)}100%{transform:translateX(-100%)}}
+
+    /* intentionally bad responsiveness */
+    @media (max-width:800px){
+      h1{font-size:36px}
+      .sidebar{float:none;width:100%;}
+      table.big{font-size:12px}
+    }
+
+    /* Blink simulation */
+    .blink{animation:blink 1s steps(1,end) infinite}
+    @keyframes blink{50%{opacity:0}}
+
+    /* misc ugly decorations */
+    .badge{display:inline-block;padding:6px;border-radius:50px;background:radial-gradient(circle,#fff,#f0f);border:3px solid #000;margin:4px}
+
+    /* Forced font mismatch */\    
+    .comic{font-family: 'Comic Sans MS', 'Courier New', monospace;font-size:18px}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>WELCOME TO THE UGLY SITE</h1>
+    <div id="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar">
+      <h2 class="comic">Side Panel</h2>
+      <p><strong>Quick links:</strong></p>
+      <ul class="weird-list">
+        <li>Latest News <span class="badge">NEW</span></li>
+        <li>Offers <span class="badge">50%?</span></li>
+        <li class="blink">Breaking <small>(maybe)</small></li>
+      </ul>
+
+      <h3>Contact</h3>
+      <p>Call us at <u>555-UGLY</u> or email: <i>nobody@ugly.example</i></p>
+
+      <div style="margin-top:12px;text-align:center">
+        <a class="btn" href="#">Click me!</a>
+        <a class="btn" href="#">No, click me!</a>
+      </div>
+    </div>
+
+    <div style="margin-right:300px"> <!-- main content area (poorly spaced) -->
+      <div class="marquee"><p>!!! HOT DEALS !!! &nbsp;&nbsp; SAVE SAVE SAVE &nbsp;&nbsp; LIMITED TIME !!! &nbsp;&nbsp; CLICK NOW !!!</p></div>
+
+      <h2>Our favorite things (in a table)</h2>
+      <table class="big">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Availability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Weird Lamp</td>
+            <td>An oddly shaped lamp that hums.</td>
+            <td>$19.99</td>
+            <td>Out of stock</td>
+          </tr>
+          <tr>
+            <td>Invisible Mug</td>
+            <td>See-through. Mostly empty.</td>
+            <td>$0.00</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <td>Time Machine (Beta)</td>
+            <td>Works on Tuesdays only.</td>
+            <td>$9,999.99</td>
+            <td>Pre-order</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Also: lists — because HTML</h2>
+      <ol>
+        <li>Step one: Panic</li>
+        <li>Step two: Add more CSS</li>
+        <li>Step three: Profit?
+          <ul>
+            <li>Sub-list item A</li>
+            <li>Sub-list item B
+              <ol>
+                <li>Deeply nested 1</li>
+                <li>Deeply nested 2</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+      <h2>Comparison (table with merged cells)</h2>
+      <table class="big">
+        <tr>
+          <th>Feature</th>
+          <th colspan="2">Plan A</th>
+          <th>Plan B</th>
+        </tr>
+        <tr>
+          <td>Support</td>
+          <td>None</td>
+          <td>Sometimes</td>
+          <td>24/7</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Updates</td>
+          <td>Rare</td>
+          <td>Weekly</td>
+          <td>Never</td>
+        </tr>
+        <tr>
+          <td colspan="2">Surprising</td>
+          <td>Scheduled</td>
+        </tr>
+      </table>
+
+      <h2 class="comic">Testimonials</h2>
+      <blockquote>
+        "This website changed my life, then changed it back." — Someone. <br>
+        <small>— Verified maybe</small>
+      </blockquote>
+
+      <h2>Random form (terrible UX)</h2>
+      <form action="#" method="GET">
+        <label for="name">Full name:</label><br>
+        <input id="name" name="name" type="text" placeholder="e.g. Dr. Evil" style="width:70%;padding:8px;margin:6px 0;border:4px solid #f0f" /><br>
+
+        <label for="color">Favorite color:</label>
+        <select id="color" name="color">
+          <option>Red</option>
+          <option>Yellow</option>
+          <option selected>Something flashy</option>
+        </select><br>
+
+        <label>Choose:</label>
+        <input type="checkbox" id="one" name="one" checked> <label for="one">Option 1</label>
+        <input type="checkbox" id="two" name="two"> <label for="two">Option 2</label><br>
+
+        <textarea placeholder="Tell us EVERYTHING" style="width:100%;height:120px;border:6px inset #999;margin-top:6px"></textarea><br>
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+
+      <h2>Big ugly footer table</h2>
+      <table class="big" style="margin-bottom:0">
+        <tr>
+          <td>© 1999-2099 Ugly Inc.</td>
+          <td>Terms &amp; Conditions</td>
+          <td>Privacy (what's that?)</td>
+        </tr>
+      </table>
+
+    </div>
+
+    <footer>
+      <p><strong>Warning:</strong> viewing this website may reduce your aesthetic sensibilities. Proceed at your own risk.</p>
+    </footer>
+  </div>
+</body>
+</html>
